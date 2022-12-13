@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Python heapq 构造大顶堆 | _LINGRAN_🥝</title><meta name="author" content="_LINGRAN_🥝"><meta name="copyright" content="_LINGRAN_🥝"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="大家都知道Python的​​heapq​​只能构造小顶堆，下面就看看是怎么实现的大顶堆？堆作为优先队列的常用方法，而且在数据结构和算法方面，经常使用大顶堆和小顶堆进行问题的解决。   导入heapq:  1import heapq   注意：默认的堆结构是小顶堆heapq里没有直接构造大顶堆的方法，可以使用一个很取巧的思路进行解决。首先我们进行构造堆结构，注意要在每一个元素增加一个-：  123">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Python heapq 构造大顶堆 | _LINGRAN_🥝</title><meta name="author" content="_LINGRAN_🥝"><meta name="copyright" content="_LINGRAN_🥝"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="大家都知道Python的​​heapq​​只能构造小顶堆，下面就看看是怎么实现的大顶堆？堆作为优先队列的常用方法，而且在数据结构和算法方面，经常使用大顶堆和小顶堆进行问题的解决。   导入heapq:  1import heapq   注意：默认的堆结构是小顶堆heapq里没有直接构造大顶堆的方法，可以使用一个很取巧的思路进行解决。首先我们进行构造堆结构，注意要在每一个元素增加一个-：  123">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python heapq 构造大顶堆">
 <meta property="og:url" content="https://blog.lingran.xyz/2022/12/13/Python%20heapq%20%E6%9E%84%E9%80%A0%E5%A4%A7%E9%A1%B6%E5%A0%86/index.html">
@@ -118,7 +118,7 @@
       win.activateLightMode = function () {
         document.documentElement.setAttribute('data-theme', 'light')
         if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
         }
       }
       const t = saveToLocal.get('theme')
